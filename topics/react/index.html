@@ -2,8 +2,81 @@
 <html>
     <head>
         <title> Raja Malik</title>
+        <style>
+                body header{
+                  font-family: 'Tangerine', serif;
+                  font-size: 48px;
+                }
+                .main-content{
+                  font-size: 14px;
+                }
+                .my-pic{
+                  width: 100%;
+                }
+                footer {
+                  font-size: 10px;
+                }
+                .code {
+                    width:100%;
+                    background-color: lightgray;
+                    font-family: 'Courier New', Courier, monospace;
+                    padding: 20px;
+                }
+              </style>
     </head>
     <body>
-        This is about react.js.
+        <h2>Understanding React</h2>
+        <p>
+            React.js is a library to render UI. It does so with the help of
+            React components. Any control you see on a webpage can be an outcome
+            of react components. 
+
+            The objective of React component is to render some content on screen.
+            
+            So, here it is, your first React component:
+
+            <h5>Function Component</h5>
+            <div class="code">
+                <div>function Greeting(){</div>
+                <div>&emsp;return &lt;div&gt;Greet People&lt;/div&gt;</div>
+                <div> }</div>
+            </div>
+
+            <p>Above React component is a function component which is best suited if 
+            your component is only for rendering(other components can be used to
+            hold any variable values, do some computations etc.).
+            
+            On the contrary, if you have some state of component, like a Form component
+            may need to accept various inputs like name, age, location. These inputs are 
+            called state of component.  
+
+            These components are called class component as the class keyword is used
+            to create such components. For such components, it is must to have a render 
+            method as:
+            </p>
+
+            <h5>Class Component</h5>
+            <div class="code">
+                    <div>class Greeting(){</div>
+                            <div>&emsp;render(){</div>
+                                    <div>&emsp;&emsp;return (</div>
+                                        <div>&emsp;&emsp;&emsp;&lt;div&gt;Greet People&lt;/div&gt;</div>
+                            <div> &emsp;&emsp;) </div>
+                                    <div>&emsp;} </div>
+                                            <div> } </div>
+            </div>
+            
+
+
+
+        </p>
+        <p> and it allows us, the web engineers to do in a declarative way. 
+            When I say, declarative, I mean it allows us to first declare 
+            <strong>WHAT</strong> is that we are creating. 
+        </p>
+        <p>
+            As an answer to "What is being rendered?", we have to jump to 
+            render method of a React component.
+        </p>
     </body>
 </html>
